@@ -12,14 +12,12 @@ body{
 .outer-box{
     width: 100vw;
     height: 100vh;
-    /* border: 2px solid black; */
-    /* background: linear-gradient(to top right, rgb(247, 123, 144), rgb(230, 227, 230)); */
-    background: linear-gradient(to bottom right, #3ed8ff, #a8f5ff);
+    background-color: #040405;
 }
 
 .inner-box{
-    width: 400px;
-    /* border: 2px solid red; */
+    width: 500px;
+    border: 0.1px solid #e4d4d7;
     margin: 0 auto;
     position: relative;
     top: 50%;
@@ -27,18 +25,18 @@ body{
     padding: 20px 40px;
     border-radius: 15px;
     /* background-color: #ffffff11; */
-    background: linear-gradient(to bottom right, #ffffff88, #ffffff00);
-    backdrop-filter: blur(10px);
-    box-shadow: 10px 10px 15px #2773a5;
+    background: linear-gradient(to bottom right, #ffffff55, #ffffff00);
+    backdrop-filter: blur(20px);
+    box-shadow: 3px 3px 8px #e4d4d744;
     z-index: 2;
 }       
 
 .signup-head h1{
-    color: rgb(34, 34, 34);
+    color: #e4d4d7;
 }
 .signup-head p{
     font-size: 0.8rem;
-    color: grey;
+    color: #e4d4d7;
     margin-top: 5px;
 }
 
@@ -51,44 +49,47 @@ body{
 .signup-body p label{
     display: block;
     font-size: 1.2rem;
+    color: #e4d4d7;
 }
 .signup-body p input{
     font-size: 0.9rem;
     width: 100%;
     padding: 10px;
     margin: 5px 0;
-    border: 1px solid gray;
+    border: 1px solid #e4d4d7;
     border-radius: 5px;
+    background-color: transparent;
 }
 .signup-body p input[type="submit"]{
-    background-color: #3498db;
+    background-color: #ff194a;
     border: none;
-    color: white;
+    color: #e4d4d7;
     cursor: pointer;
 }
 .signup-body p input[type="submit"]:hover{
-    background-color: #2773a5;
+    background-color: #292929;
 }
 .signup-foot p{
-    color: gray;
+    color: #e4d4d7;
     text-align: center;
 }
 .signup-foot p a{
-    color: #2773a5;
+    color: #ff194a;
 }
 
 .circle{
     width: 200px;
     height: 200px;
     border-radius: 100px;
-    background: linear-gradient(to top left, #ffffff00, #ffffffff);
     position: absolute;
 }
 .c1{
-    top: 100px;
-    left: 20%;
+    top: 30px;
+    left: 61%;
+    background: linear-gradient(to right, #ec058a, #f76466);
 }
 .c2{
-    bottom: 100px;
-    right: 20%;
+    bottom: 30px;
+    right: 61%;
+    background: linear-gradient(to right, #d822fc, #9a31ee);
 }
