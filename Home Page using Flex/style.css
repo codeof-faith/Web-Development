@@ -222,6 +222,7 @@ header{
 }
 
 .examples-area{
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-block: 30px;
 }
@@ -260,4 +261,50 @@ header{
     right: 20px;
     left: 20px;
     color: white;
+}
+
+.cta-section-box{
+    background-color: #183b56;
+    color: white;
+}
+
+.cta-section{
+    gap: 50px;
+}
+
+.cta-description{
+    margin-block: 30px;
+}
+.cta-description a {
+    margin-top: 20px;
+}
+
+.cta-image img{
+    width: 100%;
+}
+
+.trial-section {
+    margin-block: 50px;
+    text-align: center;
+}
+
+.trial-section a {
+    margin-block: 20px;
+}
+
+.footer{
+    background-color: #8fa9c2;
+    padding: 20px 0;
+}
+.footer-box{
+    justify-content: space-around;
+}
+
+.footer-links {
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.text-link{
+    color: var(--primary-text-color);
 }
