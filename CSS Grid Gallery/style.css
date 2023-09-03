@@ -70,3 +70,20 @@ body {
     background-position: center;
     box-shadow: 0 0 5px white;
 }
+
+@media screen and (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        padding-block: 25px;
+    }
+    .gallery {
+        width: 100%;
+        padding-inline: 15px;
+        grid-auto-rows: 250px;
+    }
+    .box {
+        /* margin-block: 5px; */
+        grid-row: span 1;
+        grid-column: span 3;
+    }
+}
