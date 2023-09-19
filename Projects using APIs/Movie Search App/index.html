@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <!-- Adding CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eae0ba9398.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="top-bar container flex">
+                <a href="#" class="app-logo">
+                    <img src="./Logo.png" alt="App Logo">
+                </a>
+                <div class="app-name">iTV Movies</div>
+            </div>
+        </header>
+        <div class="search-container">
+            <div class="search-bar container flex">
+                <h2>Search Movie :</h2>
+                <div class="search-input">
+                    <input type="text" class="movie-search-input" id="movie-search-text" placeholder="e.g. Avengers" onkeyup="findMovies()" onclick = "findMovies()">
+                    <div class="search-list" id="search-list">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="result-container container" id="result-container">
+
+        </div>
+    </div>
+
+    <template class="search-item-template" id="search-item-template">
+        <div class="search-item flex" id="search-item" data-id="123">
+            <div class="movie-thumbnail">
+                <img src="./Avengers-Poster.jpg" alt="Thumbnail Image" id="thumbnail">
+            </div>
+            <div class="movie-name-info">
+                <h3 id="movie-name">Avengers</h3>
+                <p id="movie-year">2012</p>
+            </div>
+        </div>
+    </template>
+    <template class="result-item-template" id="result-item-template">
+        <div class="result-item" id="result-item">
+            <div class="movie-poster">
+                <img src="./Avengers-Poster.jpg" alt="Movie Poster" id="movie-image">
+            </div>
+            <div class="movie-details">
+                <div class="movie-title">The Avengers</div>
+                <ul class="movie-info flex">
+                    <li class="year"><b>Year:</b> 2012</li>
+                    <li class="rated"><b>Rated:</b>  PG-13</li>
+                    <li class="released"><b>Released:</b> 04 May 2012</li>
+                    <li class="runtime"><i class="fa-solid fa-film" style="color: #f1c40f;"></i> 143 min</li>
+                </ul>
+                <div class="genre"><b>Genre:</b> Action, Sci-Fi</div>
+                <div class="rating"><b>IMDB Rating:</b> 8.0</div>
+                <div class="director"><b>Director:</b> Joss Whedon</div>
+                <div class="writer"><b>Writer:</b> Joss Whedon, Zak Penn</div>
+                <div class="actors"><b>Actors:</b> Robert Downey Jr., Chris Evans, Scarlett Johansson</div>
+                <div class="plot"><b>Plot:</b> Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.</div>
+                <div class="language"><b>Language:</b> English, Russian</div>
+                <div class="country"><b>Country:</b> United States</div>
+                <div class="awards"><i class="fa-solid fa-award" style="color: #f1c40f;"></i> Nominated for 1 Oscar. 38 wins & 80 nominations total</div> 
+            </div>
+        </div>
+    </template>
+
+    <!-- Adding javascript file -->
+    <script src="script.js"></script>
+</body>
+</html>
