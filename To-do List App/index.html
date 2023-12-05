@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/eae0ba9398.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="app">
+            
+            <div class="container" id="task-container">
+                <header>
+                    <h1 class="title">My Todos</h1>
+                </header>
+
+                <div class="task-actions" id="task-actions">
+                    <button class="taskBtn btn" id="create-btn">Add task</button>
+                    <button class="taskBtn btn" id="clear-btn">Clear All</button>
+
+                    <div class="popup create-task" id="create-popup">
+                        <h4>Enter your task here</h4>
+                        <input type="text" class="task-input" id="task-input" placeholder="Coding practice">
+                        <div class="create-actions">
+                            <button class="createtaskBtn btn" id="submit-btn">Submit</button>
+                            <button class="createtaskBtn btn" id="discard-btn">Discard</button>
+                        </div>
+                    </div>
+                    <div class="popup task-submitted" id="task-added-popup">
+                        <p>A new task has been added.</p>
+                        <button class="confirm-submit btn" id="confirm-submit-btn">OK</button>
+                    </div>
+                </div>
+
+                <div class="filters ">
+                    <div class="filter-type selected" id="all-tasks" onclick="renderTasks()">All</div>
+                    <div class="filter-type" id="completed-tasks" onclick="renderCompletedTasks()">Completed</div>
+                    <div class="filter-type" id="pending-tasks" onclick="renderPendingTasks()">Pending</div>
+                </div>
+
+                <div class="list" id="list">
+                    
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <template class="task-template" id="task-template">
+        <div class="task">
+            <input type="checkbox" class="chkBox">
+            <div class="taskDesc" id="taskDesc">Task 1</div>
+            <div class="actions">
+                <div class="editTask btn"><i class="fa-solid fa-pen fa-2xl" style="color: #6299f9;"></i></div>
+                <div class="deleteTask btn"><i class="fa-solid fa-circle-minus fa-2xl" style="color: #ff0000;"></i></div>
+            </div>
+        </div>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>

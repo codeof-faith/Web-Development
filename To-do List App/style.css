@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --top-bottom: 20px;
+}
+
+body{
+    font-family: 'Roboto Slab', serif;
+    
+}
+.title{
+    text-align: center;
+    padding-block: 20px;
+    color: #222222;
+}
+
+.app{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to top right, #6780FF, #E2AFFA); */
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+.container{
+    width: 80vw;
+    height: 80vh;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background:rgba(100, 100, 100, 0.5);
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 100px 0 rgba(0, 0, 0, 0.7);
+    z-index: 2;
+    /* overflow: auto; */
+}
+
+.popup{
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    position: absolute;
+    background-color: white;
+    border: 2px solid black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.open-popup{
+    visibility: visible;
+}
+
+.create-task{
+    width: 40vw;
+    height: 25vh;
+}
+
+.task-input{
+    background-color: rgb(202, 202, 202);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 15px;
+}
+
+.create-actions{
+    display: flex;
+    justify-content: space-around;
+    margin-block: 15px;
+}
+
+.createtaskBtn, .confirm-submit{
+    color: #FFF9FF;
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+    margin-block: 15px;
+}
+
+.task-submitted{
+    width: 20vw;
+    height: 20vh;
+}
+
+.task{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    margin: 10px;
+    background-color: #ffeef4;
+}
+
+.chkBox{
+    margin-inline: 20px;
+}
+
+.task-actions{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn{
+    cursor: pointer;
+}
+.btn:hover{
+    box-shadow: 5px 5px 20px rgba(97, 97, 97, 0.5);
+}
+
+.taskBtn{
+    color: #FFF9FF;
+    padding: 5px 50px;
+    border-radius: 10px;
+    border: 0;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.1);
+}
+
+#create-btn, #submit-btn, #confirm-submit-btn{
+    background-color: #01361d;
+}
+
+#clear-btn, #discard-btn{
+    background-color: #47020d;
+}
+
+.filters{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(255, 214, 79, 0.644);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.788);
+    margin-block: var(--top-bottom);
+    margin-inline: 50px;
+    padding-block: 5px;
+}
+
+.selected{
+    color: #00129e;
+}
+
+.actions{
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.completed{
+    background-color: #ffc8da;
+}
+
+.hide{
+    display: none;
+}
+
+.list{
+    margin-inline: 50px;
+    height: 50vh;
+    overflow: auto;
+}
